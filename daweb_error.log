@@ -1,0 +1,6 @@
+[Mon Dec 07 20:48:11.887933 2020] [php7:crit] [pid 10176:tid 1652] [client 127.0.0.1:59557] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')' in C:\\xampp\\htdocs\\daweb\\core\\helpers\\template.php on line 15
+[Mon Dec 07 20:51:50.285605 2020] [php7:crit] [pid 10176:tid 1648] [client 127.0.0.1:59582] PHP Parse error:  syntax error, unexpected '=' in C:\\xampp\\htdocs\\daweb\\core\\db\\DAO.php on line 101
+[Mon Dec 07 21:25:59.565286 2020] [php7:error] [pid 10176:tid 1652] [client 127.0.0.1:59639] PHP Fatal error:  Interface 'IDB' not found in C:\\xampp\\htdocs\\daweb\\core\\db\\MySql.php on line 3
+[Mon Dec 07 21:32:31.721504 2020] [php7:error] [pid 10176:tid 1648] [client 127.0.0.1:59670] PHP Fatal error:  Interface 'IDB' not found in C:\\xampp\\htdocs\\daweb\\core\\db\\MySql.php on line 3
+[Mon Dec 07 21:37:02.403817 2020] [php7:crit] [pid 10176:tid 1652] [client 127.0.0.1:59695] PHP Parse error:  syntax error, unexpected 'exists' (T_STRING) in C:\\xampp\\htdocs\\daweb\\core\\mvc_engine\\front_controller.php on line 21
+[Mon Dec 07 21:39:49.919450 2020] [php7:crit] [pid 10176:tid 1648] [client 127.0.0.1:59705] PHP Parse error:  syntax error, unexpected 'exists' (T_STRING) in C:\\xampp\\htdocs\\daweb\\core\\mvc_engine\\front_controller.php on line 21
