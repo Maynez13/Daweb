@@ -1,5 +1,4 @@
 <?php
-
 class Clasificacion extends DAO {
 
     public function __construct() {
@@ -8,7 +7,5 @@ class Clasificacion extends DAO {
         $this->descripcion = "";
         $this->padre = 0;
     } 
-
 }
-
 ?>
