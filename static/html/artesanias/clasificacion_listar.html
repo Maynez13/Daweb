@@ -1,7 +1,9 @@
 <div class="mx-auto m-3 p-3">
     <div class="card">
-        <dvi class="card-header bg-success">
-            <h1>Listado de clasificación</h1>
+        <div class="card-header bg-success">
+             
+   
+            <h1>Listado de clasificación </h1>
         </div>
         <div class="card-body shadow rounded" >
             <table class="table table-hover table-bordered" >
@@ -22,16 +24,18 @@
                         <td>{padre}</td>
                         <td>
                             <a href="/artesanias/clasificacion/edit/{id} ">
-                                <img src="/static/img/edit.svg" width="48" alt="edit" title="Editar el elemento actual "/>
+                                <img src="/static/img/edit.png" width="48" alt="edit" title="Editar el elemento actual "/>
                             </a> 
                         </td>
-                        <td>                                                           
+                        <td>                              
                             <a href="/artesanias/clasificacion/delete/{id} "
                             onclick="return confirm( 'Esta seguro de Borrar {descripcion}') ">
-                                <img src="/static/img/delete.svg" width="48" alt="delete" title="Borrar el elemento actual "/>
+                                <img src="/static/img/delete.png" width="48" alt="delete" title="Borrar el elemento actual "/>
                             </a> 
                         </td>
-  </tr>
+
+
+                    </tr>
                     <!--LISTADO_CLASIFICACION-->
                 </tbody>
             </div>

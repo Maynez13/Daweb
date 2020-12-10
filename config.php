@@ -13,8 +13,8 @@ const PRODUCTION = FALSE;  #--- TRUE cuando esté en producción
 
 
 #--- Rutas absolutas
-const APP_DIR = "c:/xampp/htdocs/daweb/";
-const STATIC_DIR = "c:/xampp/htdocs/daweb/static/"; 
+const APP_DIR = "C:/xampp/htdocs/daweb/";
+const STATIC_DIR = "C:/xampp/htdocs/daweb/static/"; 
 
 #--- Directorio Web (ruta después del dominio. / para directorio raíz)
 const WEB_DIR = "/";
@@ -52,9 +52,11 @@ if(!PRODUCTION) {
 
 function importar($file='') {
     if (!file_exists(APP_DIR . "$file.php")){ 
-        exit("FATAL ERROR: No se encontro el archivo ".APP_DIR."$file.php");
+        exit("FATAL ERROR: No se encontró el archivo ".APP_DIR."$file.php");
     }
     require_once "$file.php";
 
 }
+
 ?>
+

@@ -1,6 +1,6 @@
 <?php
 /**
-* Clase que provee de una API pÃºblica para cada uno de los recursos habilitados
+* Clase que provee de una API pública para cada uno de los recursos habilitados
 *
 * @package    EuropioEngine
 * @subpackage core.api
@@ -8,6 +8,8 @@
 * @author     Eugenia Bahit <ebahit@member.fsf.org>
 * @link       http://www.europio.org
 */
+importar('core/helpers/http');
+importar('core/mvc_engine/helper');
 importar('core/helpers/http');
 importar('core/mvc_engine/helper');
 class ApiRESTFul {
@@ -18,23 +20,11 @@ class ApiRESTFul {
         header("Content-Type: text/json; charset=utf-8");
         print json_encode($apidata);
     }
-    private static function check_resource($model, $resource) {
+	    private static function check_resource($model, $resource) {
         $resources = self::check_model($model);
         if (!in_array($resource, $resources)){
             HTTPHelper::error_response();
         } 
     }
-
-    private static function check_model($model='') {
-        global $allowed_resources;
-
-        $m = str_replace('-', '', $model);
-        if(array_key_exists($m, $allowed_resources)) {
-            return $allowed_resources[$m];
-        } else {
-            HTTPHelper::error_response();
-        }
-    }
 }
-
 ?>
