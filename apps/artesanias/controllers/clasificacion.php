@@ -22,11 +22,13 @@ class ClasificacionController extends Controller  {
     }
 
     public function guardar(){
+       $id          = $_POST['id'] ?? 0;
        $descripcion = $_POST['descripcion'];
        $padre       = $_POST['padre'];
        //--- validar datos
 
        //--- asociar al modelo
+       $this->model->id=$id;
        $this->model->descripcion = $descripcion;
        $this->model->padre       = $padre;
        $this->model->save();
@@ -34,6 +36,19 @@ class ClasificacionController extends Controller  {
        HTTPHelper::go("/artesanias/clasificacion/listar");
     }
 
+
+     public function eliminar($id){
+        $this->model->delete($id);
+        HTTPHelper::go("/artesanias/clasificacion/listar");
+    }
+
+     public function editar($id=0){
+        $sql = "SELECT * FROM clasificacion";
+        $clasificacionListado = $this->model->query($sql);
+        $clasificacion = $this->model->getById($id);
+
+        $this->view->editar($clasificacionListado, $clasificacion);
+    }
 }
 
 ?>
