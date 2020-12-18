@@ -3,7 +3,7 @@
         <div class="card-header bg-success">
              
    
-            <h1>Listado de clasificación </h1>
+            <h1>Roles de Usuarios </h1>
         </div>
         <div class="card-body shadow rounded" >
             <table class="table table-hover table-bordered" >
@@ -11,24 +11,22 @@
                 <thead class="thead-light ">
                     <tr>
                         <th scope="col">ID</th>
-                        <th scope="col">CLASIFICACION</th>
-                        <th scope="col">DEPENDE DE</th>
+                        <th scope="col">DESCRIPCION</th>
                         <th scope="col" colspan="2">ACCION</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!--LISTADO_CLASIFICACION-->
+                    <!--LISTADO_ROLES-->
                     <tr>
                         <td>{id}</td>
                         <td>{descripcion}</td>
-                        <td>{padre}</td>
                         <td>
-                            <a href="/artesanias/clasificacion/editar/{id} ">
+                            <a href="/artesanias/roles/editar/{id} ">
                                 <img src="/static/img/edit.png" width="48" alt="edit" title="Editar el elemento actual "/>
                             </a> 
                         </td>
                         <td>                              
-                            <a href="/artesanias/clasificacion/eliminar/{id} "
+                            <a href="/artesanias/roles/eliminar/{id} "
                             onclick="return confirm( 'Esta seguro de Borrar {descripcion}') ">
                                 <img src="/static/img/delete.png" width="48" alt="delete" title="Borrar el elemento actual "/>
                             </a> 
@@ -36,12 +34,12 @@
 
 
                     </tr>
-                    <!--LISTADO_CLASIFICACION-->
+                    <!--LISTADO_ROLES-->
                 </tbody>
             </div>
         </div>
     </div>
 </div>
-<a href="/artesanias/clasificacion/agregar/">
+<a href="/artesanias/roles/agregar/">
                 <img src="/static/img/agregar.jpg" width="48" alt="delete"/>
                             </a>

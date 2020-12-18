@@ -42,8 +42,14 @@ class ClasificacionController extends Controller  {
         HTTPHelper::go("/artesanias/clasificacion/listar");
     }
 
-     public function editar($id=0){
-        $sql = "SELECT * FROM clasificacion";
+    public function editar($id=0){
+        $sql= "SELECT  A.padre 
+            FROM clasificacion A WHERE A.id=$id ";
+
+         $sql = "SELECT C.id, C.descripcion, C.padre,
+          if(A.padre=C.id,'selected','') as selected
+         FROM clasificacion as C, ($sql) as A";
+         
         $clasificacionListado = $this->model->query($sql);
         $clasificacion = $this->model->getById($id);
 
