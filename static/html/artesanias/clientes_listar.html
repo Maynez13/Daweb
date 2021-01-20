@@ -1,0 +1,53 @@
+<div class="mx-auto m-3 p-3">
+    <div class="card">
+        <div class="card-header bg-success">
+             
+   
+            <h1>Listado de Clientes</h1>
+        </div>
+        <div class="card-body shadow rounded" >
+            <table class="table table-hover table-bordered" >
+                <caption>Pág. 1 </caption>
+                <thead class="thead-light ">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">NOMBRE O RAZON SOCIAL</th>
+                        <th scope="col">DOMICLIO</th>
+                        <th scope="col">TELEFONO</th>
+                        <th scope="col">CORREO</th>
+                        <th scope="col">CONTACTO</th>
+                        <th scope="col" colspan="2">ACCION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--LISTADO_CLIENTES-->
+                    <tr>
+                        <td>{id}</td>
+                        <td>{nombreorazonsocial}</td>
+                        <td>{domicilio}</td>
+                        <td>{telefono}</td>
+                        <td>{correo}</td>
+                        <td>{contacto}</td>
+                        <td>
+                            <a href="/artesanias/clientes/editar/{id} ">
+                                <img src="/static/img/edit.png" width="48" alt="edit" title="Editar el elemento actual "/>
+                            </a> 
+                        </td>
+                        <td>                              
+                            <a href="/artesanias/clientes/eliminar/{id} "
+                            onclick="return confirm( 'Esta seguro de Borrar el cliente {nombreorazonsocial}') ">
+                                <img src="/static/img/delete.png" width="48" alt="delete" title="Borrar el elemento actual "/>
+                            </a> 
+                        </td>
+
+
+                    </tr>
+                    <!--LISTADO_CLIENTES-->
+                </tbody>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="/artesanias/clientes/agregar/">
+                <img src="/static/img/agregar.jpg" width="48" alt="delete"/>
+                            </a>

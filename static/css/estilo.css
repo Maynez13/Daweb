@@ -7,3 +7,56 @@ header {
 .centrado{
 	text-align: center;
 }
+.alert {
+    max-width:600px; 
+    top:10%;
+    background-color: white;
+}
+  .alert .header {
+    background-color: #16851c;
+    margin: auto;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    padding: 10px;
+  }
+  .alert .body{
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid grey;
+  }
+  .alert .footer{
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+  }
+
+
+div#menu{
+  width: 200px;
+  margin-top:50px;
+
+}
+div#menu ul{
+  list-style: none;
+}
+div#menu ul li{
+  margin-top:15px;
+  font-family:tahoma;
+  font-size: 18px;
+  background-color:green;
+  width: 160px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-radius: 0px 20px 20px 0px;
+  padding-left: 20px;
+  box-shadow: 5px 0px 10px #939393;
+  -webkit-transition:padding-left 0.6s; 
+  color: white; 
+}
+div#menu ul li:hover{
+  padding-left: 50px;
+}
